@@ -6,6 +6,37 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================
+  // 0. HERO NAME TYPING ENGINE
+  // ==========================================
+  const typingName = document.getElementById('hero-typing-name');
+  if (typingName) {
+    const textToType = typingName.textContent.trim() || "Sneha Chand";
+    typingName.textContent = "";
+    
+    let charIndex = 0;
+    
+    function typeChar() {
+      if (charIndex < textToType.length) {
+        typingName.textContent += textToType.charAt(charIndex);
+        charIndex++;
+        
+        // J.A.R.V.I.S. Organic Cadence: Adds a slight computational fluctuation
+        // between 135ms and 175ms for a highly deliberate, real-time AI assembly feel.
+        const organicInterval = Math.random() * 40 + 135;
+        setTimeout(typeChar, organicInterval);
+      } else {
+        // Typing complete - trigger color shift & glow transition
+        setTimeout(() => {
+          typingName.classList.add('typing-finished');
+        }, 400); // 400ms pause for Jarvis state stabilization
+      }
+    }
+    
+    // Deliberate initial boot sequence delay (600ms) to mirror J.A.R.V.I.S. loading
+    setTimeout(typeChar, 600);
+  }
+
+  // ==========================================
   // 1. NEURAL PARTICLE BACKGROUND CANVAS
   // ==========================================
   const canvas = document.getElementById('particle-canvas');
@@ -308,10 +339,10 @@ document.addEventListener('DOMContentLoaded', () => {
           // Download trigger on complete
           if (step.progress === 100 && step.log.includes('[SUCCESS]')) {
             setTimeout(() => {
-              // Create dynamic download anchor to download resume.txt
+              // Create dynamic download anchor to download resume.pdf
               const dlAnchor = document.createElement('a');
-              dlAnchor.href = 'resume.txt';
-              dlAnchor.download = 'Sneha_Chand_Resume.txt';
+              dlAnchor.href = 'resume.pdf';
+              dlAnchor.download = 'Sneha_Chand_Resume.pdf';
               document.body.appendChild(dlAnchor);
               dlAnchor.click();
               document.body.removeChild(dlAnchor);
@@ -451,49 +482,97 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSubmitBtn = document.getElementById('contact-submit-btn');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const sender = document.getElementById('contact-sender').value;
       const email = document.getElementById('contact-email').value;
       const message = document.getElementById('contact-message').value;
 
-      // Lock buttons
+      // Lock submit and display diagnostic screen
       formSubmitBtn.disabled = true;
       formDiag.style.display = 'block';
       formDiag.innerHTML = '';
 
-      const logSteps = [
-        { text: "[SECURE_PORT] Initiating secure encryption handshake...", type: 'info', delay: 100 },
-        { text: "[SECURE_PORT] Generating public/private key-pair values...", type: 'info', delay: 500 },
-        { text: `[METRIC] Target Sneha mainframe: Encrypted packet wrapper OK.`, type: 'info', delay: 1000 },
-        { text: `[TRANSMIT] Broadcasting message packet from: ${sender} [${email}]`, type: 'info', delay: 1500 },
-        { text: "[TRANSMIT] Message sent in 256-bit encrypted cypher block...", type: 'info', delay: 2100 },
-        { text: "[SUCCESS] Transmit packet delivered successfully. Mainframe logged.", type: 'success', delay: 2700 }
-      ];
+      // Helper function to append logs with terminal glow styling
+      const printLog = (text, type = 'info') => {
+        const classType = type === 'success' ? 'success' : (type === 'error' ? 'error' : '');
+        formDiag.innerHTML += `<div class="form-diagnostics-line ${classType}">${text}</div>`;
+        formDiag.scrollTop = formDiag.scrollHeight;
+      };
 
-      logSteps.forEach((step) => {
-        setTimeout(() => {
-          const classType = step.type === 'success' ? 'success' : '';
-          formDiag.innerHTML += `<div class="form-diagnostics-line ${classType}">${step.text}</div>`;
-          formDiag.scrollTop = formDiag.scrollHeight;
+      // Play start of high-tech animation
+      printLog("[SECURE_PORT] Initiating secure encryption handshake...");
+      
+      await new Promise(resolve => setTimeout(resolve, 400));
+      printLog("[SECURE_PORT] Generating public/private key-pair values...");
+      
+      await new Promise(resolve => setTimeout(resolve, 500));
+      printLog("[METRIC] Target Sneha mainframe: Encrypted packet wrapper OK.");
 
-          if (step.type === 'success') {
+      await new Promise(resolve => setTimeout(resolve, 400));
+      printLog(`[TRANSMIT] Dispatching message packet from node: ${sender}...`);
+
+      // Initiate actual transmission to FormSubmit AJAX endpoint
+      const payload = {
+        name: sender,
+        email: email,
+        message: message,
+        _subject: `[Mainframe Contact] Message from ${sender}`
+      };
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/snehachand1912@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success === "true") {
+          // Success sequence
+          printLog("[TRANSMIT] Message sent in 256-bit encrypted cypher block...", 'info');
+          await new Promise(resolve => setTimeout(resolve, 600));
+          printLog("[SUCCESS] Transmit packet delivered successfully. Mainframe logged.", 'success');
+
+          // Reset inputs and re-enable button
+          setTimeout(() => {
+            contactForm.reset();
+            formSubmitBtn.disabled = false;
+            
+            // Clear console overlay after a brief period
             setTimeout(() => {
-              // Wipe form input fields
-              contactForm.reset();
-              formSubmitBtn.disabled = false;
-              
-              // Clear diagnostics after brief period
-              setTimeout(() => {
-                formDiag.style.display = 'none';
-                formDiag.innerHTML = '';
-              }, 4000);
+              formDiag.style.display = 'none';
+              formDiag.innerHTML = '';
+            }, 4000);
+          }, 500);
 
-            }, 500);
-          }
-        }, step.delay);
-      });
+        } else {
+          throw new Error(result.message || 'Server rejected transmission.');
+        }
+
+      } catch (err) {
+        // Error handling sequence
+        console.error('Email Transmission Failed:', err);
+        printLog(`[ERROR] Packet broadcast failed: ${err.message || 'Connection timed out.'}`, 'error');
+        await new Promise(resolve => setTimeout(resolve, 600));
+        printLog("[ERROR] Secure transmission channel terminated. [FAILED]", 'error');
+
+        // Re-enable button so they can retry
+        setTimeout(() => {
+          formSubmitBtn.disabled = false;
+          
+          // Clear diagnostics after 6 seconds to let them read the error
+          setTimeout(() => {
+            formDiag.style.display = 'none';
+            formDiag.innerHTML = '';
+          }, 6000);
+        }, 500);
+      }
     });
   }
 
