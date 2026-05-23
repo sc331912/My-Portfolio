@@ -1,0 +1,81 @@
+================================================================================
+                    CYBERNETIC SYSTEM DEVELOPER RESUME v1.0.4
+================================================================================
+
+[ IDENTIFICATION ]
+--------------------------------------------------------------------------------
+Name:        SNEHA CHAND
+Role:        Computer Science Graduate & MERN Stack Developer
+Origin:      Jharsuguda, Odisha, India
+Phone:       +91-7894385422
+Email:       snehachand1912@gmail.com
+GitHub:      https://github.com/sc331912
+LinkedIn:    linkedin.com/in/sneha-chand-dev
+
+[ SUMMARY PROFILES ]
+--------------------------------------------------------------------------------
+* TECHNOLOGY:  Passionate tech enthusiast who loves transforming ideas into 
+               interactive digital experiences. Specializes in building modern, 
+               responsive, MERN stack web applications and exploring full-stack
+               ecosystems.
+* LEADERSHIP:  National Level Debater bringing exceptional public speaking, 
+               communication, leadership, and analytical thinking capabilities 
+               to engineering environments.
+* CREATIVE:    Active reader, writer, and sketch artist, translating artistic 
+               ideations directly into visually balanced UI/UX design structures.
+
+[ TECHNOLOGICAL MATRIX (SKILLS) ]
+--------------------------------------------------------------------------------
+* PROGRAMMING:  C, C++, Java, JavaScript (ES6+), Python
+* FRONTEND:     HTML5, CSS3, React.js, Tailwind CSS, Bootstrap
+* BACKEND:      Node.js, Express.js
+* DATABASES:    MongoDB, MySQL, PostgreSQL
+* TOOLS & PLAT: Git, GitHub, VS Code, Postman, Vercel, Netlify
+* CORE CS:      Data Structures & Algorithms, Object-Oriented Programming (OOPs),
+                REST APIs, Responsive Web Design, DBMS
+* COGNITIVE:    Public Speaking, Communication, Analytical Logic, Adaptability, 
+                Presentation Skills, Peer Mentoring
+
+[ HANDS-ON PROJECTS & DEPLOYMENTS ]
+--------------------------------------------------------------------------------
+> AetherChat - Real-Time Communication Node
+  - Engineered a custom real-time chat application using React.js and Socket.io.
+  - Formulated a secure backend message broker with Node.js and Express.
+  - Implemented dynamic state caching and messaging archives utilizing MongoDB.
+
+> MirrorLink - High-Fidelity Web Clones
+  - Assembled responsive, highly precise interface clones of major websites.
+  - Streamlined cross-browser stylesheet compatibility using CSS Grid and Flex.
+  - Integrated custom interactive JS components to mirror standard UX patterns.
+
+> Synaptic UI - Dynamic Interactive Experiences
+  - Sculpted dynamic webpages utilizing HSL glow palettes and custom transitions.
+  - Programmed logical visual engines relying solely on pure CSS and ES6 JS.
+  - Designed visual assets, scroll monitors, and glassmorphic card elements.
+
+[ EDUCATIONAL DATABASES ]
+--------------------------------------------------------------------------------
+* B.Sc. in Computer Science (2023 - 2026) | Completed (Graduated)
+  - Institution: Government Autonomous College, Sundargarh, Odisha
+  - Affiliation: Sambalpur University
+  - Standing:    8.23 CGPA
+
+* Senior Secondary (XII) - Science (2023)
+  - Board:       CHSE Odisha
+  - Institution: Women's College, Jharsuguda, Odisha
+  - Standing:    66.66%
+
+* Secondary (X) (2021)
+  - Board:       ICSE
+  - Institution: St. Mary’s Higher Secondary School, Jharsuguda
+  - Standing:    95% (Distinction Node)
+
+[ CERTIFICATIONS REGISTRY ]
+--------------------------------------------------------------------------------
+[01] MERN Stack Developer Mastery Certificate - Udemy Academy
+[02] Data Structures & Algorithms in Java - NPTEL Database
+[03] Creative UI/UX & Web Design - Interaction Design Foundation
+
+================================================================================
+                    [ SECURE CONNECTION TERMINATED ]
+================================================================================

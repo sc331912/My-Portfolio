@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sneha Chand | B.Sc. Computer Science Student &amp; Aspiring Full-Stack Developer. Specialized in MERN Stack, React.js, and interactive technological web applications.">
+  <meta name="keywords" content="Portfolio, Full-Stack Developer, Sneha Chand, MERN Stack, React.js, Cyberpunk, Black and Purple, HTML, CSS, JavaScript, Developer, B.Sc. Computer Science">
+  <meta name="author" content="Sneha Chand">
+  <meta property="og:title" content="Sneha Chand | Full-Stack Developer Portfolio">
+  <meta property="og:description" content="A premium interactive dark-theme portfolio showcasing hands-on projects, skills, and certifications.">
+  <meta property="og:type" content="website">
+  
+  <title>SNEHA CHAND // CORE_INTERFACE v1.0.4</title>
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Background Layer Matrix -->
+  <div class="cyber-grid" id="cyber-grid-bg"></div>
+  <canvas id="particle-canvas"></canvas>
+  <div class="scanline"></div>
+
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo-header">
+        <span class="logo-node"></span>
+        SNEHA_CHAND
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO MAIN SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h2>System Status: Active</h2>
+        <h1 class="gradient-text">Sneha Chand</h1>
+        <div class="hero-taglines">
+          <p class="hero-subtitle">Aspiring Full-Stack Developer | B.Sc. CS Student</p>
+          <p class="hero-diag">Status: <span>ON_JOURNEY</span> // Terminal: <span>STABLE</span> // Network: <span>SECURE</span></p>
+        </div>
+        <div class="hero-actions">
+          <a href="#about" class="cyber-btn" id="hero-action-enter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            Enter Console
+          </a>
+          <a href="#download-cv" class="cyber-btn cyber-btn-secondary" id="hero-action-cv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Retrieve CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-visualizer">
+        <div class="hologram-container">
+          <div class="hologram-circle"></div>
+          <div class="hologram-circle-inner"></div>
+          <div class="hologram-core" id="hero-hologram-core">
+            <img src="profile.jpg" alt="Sneha Chand" class="hologram-pic">
+          </div>
+          <div class="hologram-scanner"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME & INTERACTIVE TERMINAL -->
+  <section id="about">
+    <div class="section-header">
+      <h2>About_Me</h2>
+      <p>System Diagnostics &amp; Background Protocols</p>
+    </div>
+    
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Hi, I’m <strong>Sneha Chand</strong> — a Computer Science graduate, MERN Stack developer, and passionate tech enthusiast who loves transforming creative ideas into interactive digital experiences. I enjoy building modern, responsive, and user-focused web applications while constantly exploring new technologies in full-stack development and data science.</p>
+        <p>Alongside my programming journey, I’m also a <strong>National Level Debater</strong>. This background has fortified my communication, public speaking, leadership, and analytical thinking capabilities, giving me absolute confidence under pressure and the ability to explain complex technological ideas clearly.</p>
+        <p>When I'm not writing code or debugging databases, I find creative expression as a <strong>reader, writer, and sketch artist</strong>. These visual and narrative hobbies feed back into my development, shaping my visual UI/UX styling paradigms and structured system layouts.</p>
+        
+        <div class="cyber-profile-card">
+          <div class="profile-avatar-frame">
+            <img src="profile.jpg" alt="Sneha Chand" class="profile-avatar-img">
+          </div>
+          <div class="profile-meta">
+            <h4>Sneha Chand // Developer</h4>
+            <p>System Privileges: SNEHA_ACCESS</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Interactive Terminal Card -->
+      <div class="terminal-card" id="term-card">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="term-dot dot-red"></span>
+            <span class="term-dot dot-yellow"></span>
+            <span class="term-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">sneha@chand-node:~</div>
+          <div class="terminal-status">
+            <span class="status-pulse"></span>
+            online
+          </div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-welcome">
+            Welcome to SNEHA_CHAND interactive console. v1.0.4<br>
+            Type 'help' to view available system processes.
+          </div>
+          <div class="terminal-output" id="terminal-output">
+            <!-- Terminal Output Prints Here -->
+          </div>
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">&gt;</span>
+            <input type="text" id="terminal-input" autocomplete="off" autofocus placeholder="Type a command...">
+          </div>
+        </div>
+        <div class="terminal-quick-actions">
+          <button class="term-btn" data-cmd="help">help</button>
+          <button class="term-btn" data-cmd="about">about</button>
+          <button class="term-btn" data-cmd="education">education</button>
+          <button class="term-btn" data-cmd="skills">skills</button>
+          <button class="term-btn" data-cmd="projects">projects</button>
+          <button class="term-btn" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & LANGUAGE MATRIX -->
+  <section id="skills">
+    <div class="section-header">
+      <h2>Tech_Matrix</h2>
+      <p>Skill Sets &amp; Language Compilers</p>
+    </div>
+    
+    <div class="skills-container">
+      <div class="skills-groups">
+        
+        <!-- Frontend Development -->
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+            Frontend Systems
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React.js / MERN Stack</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Tailwind CSS &amp; Bootstrap</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 &amp; CSS3 (Grid/Flex)</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="95"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
+            Backend &amp; Database
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js / Express.js</span>
+                <span class="skill-percent">78%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MongoDB / DBMS</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PostgreSQL &amp; MySQL</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logical Foundations -->
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+            CS &amp; Core Languages
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Data Structures &amp; Alg (DSA)</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java Programming (OOPs)</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C, C++ &amp; Python Scripting</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Design & Dev Tools -->
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4" /></svg>
+            Dev Tools &amp; Platforms
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git, GitHub &amp; VS Code</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Postman &amp; REST APIs</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Vercel &amp; Netlify Deploys</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cognitive Soft Skills Area -->
+      <div class="language-matrix">
+        <div class="lang-card">
+          <div class="lang-info">
+            <h4>Public Speaking &amp; Debate</h4>
+            <p>National Level Debater / Comm Lead</p>
+          </div>
+          <span class="lang-badge">L1_ELITE</span>
+        </div>
+        <div class="lang-card">
+          <div class="lang-info">
+            <h4>Analytical thinking &amp; Logic</h4>
+            <p>Problem Solver &amp; OOPs Strategist</p>
+          </div>
+          <span class="lang-badge">L2_ACTIVE</span>
+        </div>
+        <div class="lang-card">
+          <div class="lang-info">
+            <h4>Presentation &amp; Teaching</h4>
+            <p>Peer Mentor / Explaining complex ideas</p>
+          </div>
+          <span class="lang-badge">L3_ACTIVE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / WORK GRID -->
+  <section id="projects">
+    <div class="section-header">
+      <h2>Project_Nodes</h2>
+      <p>Validated Architectural Deployments</p>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All_Nodes</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="projects-grid" id="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card cyber-card" data-category="frontend">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        <div class="project-header-img">
+          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+          <span class="project-badge">MERN Stack</span>
+        </div>
+        <div class="project-body">
+          <h3>AetherChat Communication Node</h3>
+          <p>Real-time MERN chat application supporting secure socket connections, user status listeners, instant messaging pools, and responsive visual design.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Socket.io</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+              Repository
+            </a>
+            <a href="#" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              Live Node
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card cyber-card" data-category="frontend">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        <div class="project-header-img">
+          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+          <span class="project-badge">Web Clone</span>
+        </div>
+        <div class="project-body">
+          <h3>MirrorLink Interface Clones</h3>
+          <p>Collection of high-fidelity responsive clones of major websites, demonstrating complex layouts, visual fidelity, and clean interactive components.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">Vanilla JS</span>
+            <span class="tag">UI Design</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+              Repository
+            </a>
+            <a href="#" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              Live Node
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card cyber-card" data-category="frontend">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        <div class="project-header-img">
+          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          <span class="project-badge">Interactive</span>
+        </div>
+        <div class="project-body">
+          <h3>Synaptic UI Web Experience</h3>
+          <p>Highly dynamic interactive websites engineered with customized physics-inspired animations, HSL glow maps, and smooth performance thresholds.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS Variables</span>
+            <span class="tag">Animations</span>
+            <span class="tag">HTML5</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+              Repository
+            </a>
+            <a href="#" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              Live Node
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <div class="section-header">
+      <h2>Academic_Archive</h2>
+      <p>Systematic Ledger of Educational Nodes</p>
+    </div>
+
+    <div class="projects-grid">
+      
+      <!-- B.Sc. Card -->
+      <div class="cyber-card">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        <div class="project-header-img">
+          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6.82" /></svg>
+          <span class="project-badge text-neon-cyan">CGPA: 8.23</span>
+        </div>
+        <div class="project-body">
+          <span class="cert-year" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--primary); font-weight:700">2023 - 2026 // GRADUATED (COMPLETED)</span>
+          <h3 style="margin-top:0.5rem; margin-bottom:0.25rem">B.Sc. in Computer Science</h3>
+          <p class="cert-issuer" style="font-size:0.85rem; color:var(--text-primary); margin-bottom:0.25rem">Government Autonomous College, Sundargarh</p>
+          <span class="tag" style="display:inline-block; border-color:rgba(168,85,247,0.3); color:var(--accent); font-family:var(--font-mono); font-size:0.7rem; margin-bottom:1rem">Sambalpur University, Odisha</span>
+          <p style="font-size:0.9rem; line-height:1.5">Focussed on data structures, sorting algorithms, object-oriented concepts, database models, and scalable systems.</p>
+        </div>
+      </div>
+
+      <!-- XII Card -->
+      <div class="cyber-card">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        <div class="project-header-img">
+          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 .364l-.707 .707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+          <span class="project-badge text-neon-purple">SCORE: 66.66%</span>
+        </div>
+        <div class="project-body">
+          <span class="cert-year" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--primary); font-weight:700">2021 - 2023 // COMPLETED</span>
+          <h3 style="margin-top:0.5rem; margin-bottom:0.25rem">Senior Secondary (XII) - Science</h3>
+          <p class="cert-issuer" style="font-size:0.85rem; color:var(--text-primary); margin-bottom:0.25rem">Women's College, Jharsuguda</p>
+          <span class="tag" style="display:inline-block; border-color:rgba(168,85,247,0.3); color:var(--accent); font-family:var(--font-mono); font-size:0.7rem; margin-bottom:1rem">CHSE Board, Odisha</span>
+          <p style="font-size:0.9rem; line-height:1.5">Foundational education in general sciences, with specialized programming training in computer systems logic.</p>
+        </div>
+      </div>
+
+      <!-- X Card -->
+      <div class="cyber-card">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        <div class="project-header-img">
+          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          <span class="project-badge text-neon-pink">SCORE: 95%</span>
+        </div>
+        <div class="project-body">
+          <span class="cert-year" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--primary); font-weight:700">2019 - 2021 // COMPLETED</span>
+          <h3 style="margin-top:0.5rem; margin-bottom:0.25rem">Secondary School (X)</h3>
+          <p class="cert-issuer" style="font-size:0.85rem; color:var(--text-primary); margin-bottom:0.25rem">St. Mary’s Higher Secondary School</p>
+          <span class="tag" style="display:inline-block; border-color:rgba(168,85,247,0.3); color:var(--accent); font-family:var(--font-mono); font-size:0.7rem; margin-bottom:1rem">ICSE Board, Jharsuguda</span>
+          <p style="font-size:0.9rem; line-height:1.5">Academics completed with high distinction thresholds, showing outstanding scores in mathematics and computer applications.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certificates">
+    <div class="section-header">
+      <h2>Milestones_&amp;_Credentials</h2>
+      <p>Registry of Verified Cryptographic Achievements</p>
+    </div>
+
+    <!-- Timeline Wrapper -->
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      
+      <!-- Certification 1 -->
+      <div class="timeline-item right" data-cert-id="MERN-2025" data-cert-title="MERN Stack Developer Mastery" data-cert-issuer="Udemy Academy" data-cert-date="Jan 2025" data-cert-desc="Comprehensive validation on building end-to-end full-stack web applications, routing with Node and Express, writing high-frequency REST APIs, and database modeling with MongoDB.">
+        <div class="timeline-content">
+          <div class="cert-year">2025 // ACTIVE</div>
+          <h3>MERN Stack Developer Mastery</h3>
+          <div class="cert-issuer">Udemy Academy</div>
+          <div class="cert-id">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            ID: CERT-MERN-882
+          </div>
+        </div>
+      </div>
+
+      <!-- Certification 2 -->
+      <div class="timeline-item" data-cert-id="DSA-2024" data-cert-title="Data Structures &amp; Algorithms in Java" data-cert-issuer="NPTEL Database" data-cert-date="Nov 2024" data-cert-desc="Programmatic certification highlighting absolute mastery over sorting, search algorithms, queues, hash structures, dynamic graphs, and core algorithm efficiency calculations.">
+        <div class="timeline-content">
+          <div class="cert-year">2024 // ACTIVE</div>
+          <h3>Data Structures &amp; Algorithms</h3>
+          <div class="cert-issuer">NPTEL Database</div>
+          <div class="cert-id">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            ID: DSA-JAVA-901
+          </div>
+        </div>
+      </div>
+
+      <!-- Certification 3 -->
+      <div class="timeline-item right" data-cert-id="WEB-2024" data-cert-title="Creative UI/UX &amp; Web Design" data-cert-issuer="Interaction Design Foundation" data-cert-date="Aug 2024" data-cert-desc="Design registry validating proficiency in responsive visual layout hierarchies, user experience profiling, Figma canvas structuring, and accessibility color balancing standards.">
+        <div class="timeline-content">
+          <div class="cert-year">2024 // ACTIVE</div>
+          <h3>Creative UI/UX &amp; Web Design</h3>
+          <div class="cert-issuer">Interaction Design Foundation</div>
+          <div class="cert-id">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            ID: UI-UX-DSN-771
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CV RETRIEVAL SUB-SECTION -->
+    <div class="cv-retrieval" id="download-cv">
+      <div class="retrieval-box cyber-card">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        <h3>Secure CV Retrieval System</h3>
+        <p>Establish connection to download Sneha Chand's decrypted professional dossier.</p>
+        
+        <button class="cyber-btn" id="decrypt-cv-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          Decrypt &amp; Download CV
+        </button>
+
+        <!-- Decryption Animated UI Console -->
+        <div class="decryption-console" id="decrypt-console">
+          <div class="decrypt-header">
+            <span>DECRYPTION ENGINE v0.89</span>
+            <span>SECURE_LINK: ONLINE</span>
+          </div>
+          <div class="decrypt-logs" id="decrypt-logs">
+            <!-- Automated Decrypting Logs print here -->
+          </div>
+          <div class="decrypt-progress-container">
+            <div class="decrypt-progress-header">
+              <span>DECRYPTING PAYLOAD</span>
+              <span id="decrypt-percentage">0%</span>
+            </div>
+            <div class="decrypt-progress-bar">
+              <div class="decrypt-progress-fill" id="decrypt-progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT TERMINAL SECTION -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Transmission_Node</h2>
+      <p>Establish secure communication channels</p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>Send an encrypted query directly to the Sneha mainframe node. Direct pings are processed within 12 standard system cycles.</p>
+        
+        <div class="contact-meta-list">
+          <!-- Email Node -->
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <div class="contact-meta-details">
+              <h4>Direct Ping</h4>
+              <a href="mailto:snehachand1912@gmail.com">snehachand1912@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Phone Node -->
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            </div>
+            <div class="contact-meta-details">
+              <h4>Comms Freq (Phone)</h4>
+              <a href="tel:+917894385422">+91-7894385422</a>
+            </div>
+          </div>
+
+          <!-- Network Location -->
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <div class="contact-meta-details">
+              <h4>Grid Coordinates</h4>
+              <p>Jharsuguda, Odisha, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cyber-socials">
+          <a href="https://github.com/sc331912" target="_blank" class="social-node" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="#" class="social-node" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" class="social-node" aria-label="Signal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Transmission Form -->
+      <div class="contact-form-card cyber-card">
+        <div class="cyber-corner corner-tl"></div>
+        <div class="cyber-corner corner-tr"></div>
+        <div class="cyber-corner corner-bl"></div>
+        <div class="cyber-corner corner-br"></div>
+        
+        <form class="cyber-form" id="contact-form">
+          <div class="form-group">
+            <label for="contact-sender">Sender Name</label>
+            <input type="text" id="contact-sender" class="cyber-input" required placeholder="IDENTIFY YOUR NODE...">
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Routing Email</label>
+            <input type="email" id="contact-email" class="cyber-input" required placeholder="SENDER_EMAIL@DOMAIN.COM">
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Packet Content</label>
+            <textarea id="contact-message" class="cyber-input" required placeholder="TYPE METRIC DATA MESSAGE PACKET HERE..."></textarea>
+          </div>
+          
+          <button type="submit" class="cyber-btn" id="contact-submit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Transmit Packet
+          </button>
+        </form>
+
+        <!-- secure transmit logs overlay -->
+        <div class="form-diagnostics" id="form-diagnostics">
+          <!-- Diagnostics log lines printed here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP DETAILS MODAL -->
+  <div class="cert-modal" id="cert-modal">
+    <div class="modal-content cyber-card">
+      <div class="cyber-corner corner-tl"></div>
+      <div class="cyber-corner corner-tr"></div>
+      <div class="cyber-corner corner-bl"></div>
+      <div class="cyber-corner corner-br"></div>
+      
+      <div class="modal-header">
+        <h3 id="modal-cert-title">Credential Details</h3>
+        <button class="close-modal-btn" id="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-meta">
+          <div><span class="label">ISSUER:</span> <span class="val" id="modal-cert-issuer">AWS</span></div>
+          <div><span class="label">REGISTRY DATE:</span> <span class="val" id="modal-cert-date">Nov 2024</span></div>
+          <div><span class="label">CREDENTIAL ID:</span> <span class="val text-neon-cyan" id="modal-cert-id">AWS-SAA-902</span></div>
+        </div>
+        <p class="cert-description" id="modal-cert-desc">Detailed verification dossier content description...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-diag">
+        NODE_STATUS: <span>ACTIVE</span> // PARSE_CYCLES: <span>245.02ms</span>
+      </div>
+      <div class="footer-text">
+        &copy; 2026 Sneha Chand. Engineered using HTML, CSS, and ES6 JS.
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
